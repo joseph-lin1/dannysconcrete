@@ -94,7 +94,10 @@ nav{
 .mobile-menu.open{
   opacity:1;
   pointer-events:all;
-  display:flex;
+    top: 68px;
+    overflow: auto;
+    height: 100vh;
+    display: block;
 }
 .mobile-menu ul{
   list-style:none;text-align:center;display:flex;flex-direction:column;gap:10px;margin-bottom:32px;
@@ -108,6 +111,9 @@ nav{
 }
 .mobile-menu ul li a:hover{color:var(--accent)}
 .mobile-menu .mobile-cta{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   font-family:'Oswald',sans-serif;
   font-size:1rem;letter-spacing:.18em;text-transform:uppercase;font-weight:600;
   background:var(--accent-mid);color:#fff;
